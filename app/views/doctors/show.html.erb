@@ -1,0 +1,4 @@
+<p><%=@doctor.name%> - <%=@doctor.department%></p>
+<% @doctor.appointments.each do |appointment| %>
+    <p><%=appointment.appointment_datetime%></p>
+<% end %>
